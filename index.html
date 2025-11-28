@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goods Panda - Ecommerce</title>
+    <link rel="shortcut icon" href="images/upper logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="full-page">
+        <!-- Header Section -->
+             <header class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="menu-icon">
+                        <img src="images/menu-bar.png" alt="">
+                    </div>
+                </nav>
+             </header>
+        <!-- Hero Section – Featured Product -->
+          <section class="container">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="Poppins">Mi LED TV 4A PRO 32</h1>
+                        <p class="Inter">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <div id="price-highlight" class="Poppins">
+                            $1289
+                        </div>
+                        <button class="btn-hero" onclick="buyNow('Mi LED TV 4A PRO 32')">BUY NOW</button>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/hero-tv.png" alt="TV">
+                    </div>
+                </div>
+            </div>
+          </section>
+        <!-- Category Section -->
+         <section class="container">
+            <div class="section-div">
+                <h2 class="section-title">Categories</h2>
+                <div class="categories-wrapper">
+                    <!-- 1. Category-watch -->
+                    <div id="cat-card" class="card-watch">
+                        <h3 class="category-card">Watch</h3>
+                        <img class="category-card-img" src="images/category-watch.png" alt="watch-png">
+                    </div>
+                    <!-- 2. Category-bag -->
+                    <div id="cat-card" class="card-bag">
+                        <h3 class="category-card">Bag</h3>
+                        <img class="category-card-img" src="images/category-bag.png" alt="bag-png">
+                    </div>
+                    <!-- 3. Category-shoes -->
+                    <div id="cat-card" class="card-shoes">
+                        <h3 class="category-card">Shoes</h3>
+                        <img class="category-card-img" src="images/category-shoe.png" alt="shoe-png">
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- Shoes Section -->
+         <section class="container">
+            <div class="section-div">
+                <h2 class="section-title">Shoes</h2>
+                <div class="products-grid">
+                    <!-- Shoe 1 -->
+                     <div class="product-card">
+                        <img src="images/shoe-1.png" alt="Reebok Dart Men's Shoes">
+                        <h3>Reebok Dart Men's Shoes</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <h4>$1289</h4>
+                        <button class="btn-buy" onclick="buyNow('Reebok Dart Men')">Buy Now <i class="fas fa-arrow-right"></i></button>
+                     </div>
+                    <!-- Shoe 2 -->
+                     <div class="product-card">
+                        <img src="images/shoe-2.png" alt="Reebok Pump">
+                        <h3>Reebok Dart Men's Shoes</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <h4>$799</h4>
+                        <button class="btn-buy" onclick="buyNow('Reebok Dart Men')">Buy Now <i class="fas fa-arrow-right"></i></button>
+                     </div>
+                    <!-- Shoe 3 -->
+                     <div class="product-card">
+                        <img src="images/shoe-3.png" alt="Reebok All Terrain">
+                        <h3>Reebok Dart Men's Shoes</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <h4>$699</h4>
+                        <button class="btn-buy" onclick="buyNow('Reebok Dart Men')">Buy Now <i class="fas fa-arrow-right"></i></button>
+                     </div>
+                </div>
+            </div>
+         </section>
+        <!-- Backpack Section -->
+         <section class="container">
+            <div class="section-div">
+                <h2 class="section-title">Backpack</h2>
+                <div class="products-grid">
+                    <!-- Bag 1 -->
+                     <div class="product-card">
+                        <img src="images/bag-1.png" alt="Reebok Dart Men's Shoes">
+                        <h3>Ison Backpack</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <h4>$1289</h4>
+                        <button class="btn-buy" onclick="buyNow('Reebok Dart Men')">Buy Now <i class="fas fa-arrow-right"></i></button>
+                     </div>
+                    <!-- Bag 2 -->
+                     <div class="product-card">
+                        <img src="images/bag-2.png" alt="Reebok Pump">
+                        <h3>Biaowang Backpack</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <h4>$799</h4>
+                        <button class="btn-buy" onclick="buyNow('Reebok Dart Men')">Buy Now <i class="fas fa-arrow-right"></i></button>
+                     </div>
+                    <!-- Bag 3 -->
+                     <div class="product-card">
+                        <img src="images/bag-3.png" alt="Reebok All Terrain">
+                        <h3>Dxyizu WS54 Smart</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <h4>$699</h4>
+                        <button class="btn-buy" onclick="buyNow('Reebok Dart Men')">Buy Now <i class="fas fa-arrow-right"></i></button>
+                     </div>
+                </div>
+            </div>
+         </section>
+        <!-- Newsletter Section -->
+         <section class="container">
+            <div class="newsletter">
+                <h2>LET'S STAY IN TOUCH</h2>
+                <p>Get updates on sales specials and more</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-subscribe">Send</button>
+                </form>
+            </div>
+         </section>
+    </div>
+    
+</body>
+</html>
