@@ -4,7 +4,7 @@
    /* border: 3px solid red; */
 }
 *{
-   margin: 0;
+   /* margin: 0; */
    padding: 0;
    box-sizing: border-box;
 }
@@ -51,7 +51,7 @@
 
 /* Hero Section – Featured Product */
 .hero-content{
-   border: 2px solid #ff2331;
+   border: 0.5px solid #ff2331;
    padding: 50px;
    padding-bottom: 30px;
    border-radius: 15px;
@@ -59,7 +59,7 @@
    margin-left: auto;
    margin-right: auto;
    justify-content: space-between;
-   gap: 200px;
+   gap: 150px;
    width: 90%;
    display: flex;
    align-items: center;
@@ -86,8 +86,8 @@
    margin-bottom: 20px;
 }
 #price-highlight{
-   font-weight: bold;
-   font-size: 30px;
+   font-weight: 600;
+   font-size: 45px;
    color: #FF589B;
 }
 .btn-hero {
@@ -109,7 +109,7 @@
 }
 .hero-image{
    width: 400px;
-   border: 2px solid tomato;  
+   /* border: 2px solid tomato; */
 }
 /* Category Section  */
 .section-title{
@@ -128,16 +128,17 @@
    /* border: 2px solid navy; */
    display: flex;
    justify-content: space-between;
-   gap: 20px;
+   /* gap: 20px; */
 }
 #cat-card{
     /* flex: 1;
     border-radius: 30px; */
-    padding: 20px 30px;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white; */
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: space-between; */
+    color: white;
     transition: transform 0.3s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -167,20 +168,19 @@
     align-items: center;
     text-align: center;
     border-radius: 30px;
-    background-color: #FFFDF6;
+    background-color: #fafbff;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     transition: box-shadow 0.3s;
-    border: 1px solid #f0f0f0;
-    /* border: 2px solid #929292; */
+    border: 2px solid #929292;
     padding: 22px;
     width: 360px;
 }
-h3, p, h4{
-   padding-bottom: 20px;
+h4 {
+    font-weight: 600;
 }
 h3, h4{
    font-family: Poppins;
-   font-size: 24px;
+   font-size: 26px;
 }
 p, button{
    font-family: Inter;
@@ -196,13 +196,13 @@ button{
    background-color: var(--text-dark);
    color: white;
    border: none;
-   padding: 10px 25px;
+   padding: 17px 20px;
    border-radius: 8px;
    cursor: pointer;
    font-weight: 600;
    transition: transform 0.2s;
    text-transform: uppercase;
-   font-size: 12px;
+   font-size: 20px;
    background-color: #000000;
 }
 .btn-buy:hover {
@@ -266,13 +266,22 @@ button{
 /* Laptop Device 993-1200 (max-width:1200px) */
 @media (max-width: 1200px) {
             .hero-text h1 {
-                font-size: 38px;
+                font-size: 52px;
+            }
+            .Inter{
+               font-size: 16px;
             }
         }
 
 /* Tablet Device 641-992 (max-width:992px) */
 @media (max-width: 992px) {
             /* Hero */
+            .hero-text h1 {
+                font-size: 53px;
+            }
+            .Inter{
+               font-size: 18px;
+            }
             .hero-text {
                 padding-right: 0;
                 margin-top: 30px;
@@ -293,7 +302,7 @@ button{
 
             /* Products */
             .products-grid {
-                flex-direction: column;
+                flex-direction: row;
             }
             .product-card {
                 width: 100%; /* Full width cards stacked */
@@ -305,19 +314,21 @@ button{
             }
         }
 
-/* Mobile Device 320-640 (max-width:640px) */
+/* Mobile Device 461-640 (max-width:640px) */
 @media (max-width: 640px) {
             /* Hero */
             .hero {
                 padding: 30px 20px;
             }
-            .hero-text h1 {
-                font-size: 28px;
+            .hero-text h1, #price-highlight {
+                font-size: 50px;
             }
             
             /* Categories */
             .categories-wrapper {
                 flex-direction: column;
+                align-items: center;
+                gap: 18px;
             }
             .cat-card {
                 width: 100%;
@@ -325,7 +336,11 @@ button{
                 text-align: center;
                 gap: 15px;
             }
-            
+            #cat-card{
+                   width: 564px;
+                   height: 182px;
+                   padding: 0px;
+            }
             /* Newsletter */
             .newsletter-form {
                 flex-direction: column;
@@ -338,3 +353,14 @@ button{
                 width: 100%;
             }
         }
+
+/* Mobile Device 320-460 (max-width:640px) */
+@media (max-width: 460px){
+       .products-grid {
+        flex-direction: column;
+       }
+       .product-card {
+        width: 80%;
+        margin: auto;
+       }
+}
